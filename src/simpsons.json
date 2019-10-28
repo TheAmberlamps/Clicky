@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Homer",
+    "image": "/images/Homer_Simpson.png"
+  },
+  {
+    "id": 2,
+    "name": "Marge",
+    "image": "/images/Marge_Simpson.png"
+  },
+  {
+    "id": 3,
+    "name": "Bart",
+    "image": "/images/Bart_Simpson.png"
+  },
+  {
+    "id": 4,
+    "name": "Lisa",
+    "image": "/images/Lisa_Simpson.png"
+  },
+  {
+    "id": 5,
+    "name": "Maggie",
+    "image": "/images/Maggie_Simpson.png"
+  },
+  {
+    "id": 6,
+    "name": "Abe",
+    "image": "/images/Abe_Simpson.png"
+  },
+  {
+    "id": 7,
+    "name": "Flanders",
+    "image": "/images/Ned_Flanders.png"
+  },
+  {
+    "id": 8,
+    "name": "Snrub",
+    "image": "/images/Mr_Burns.png"
+  },
+  {
+    "id": 9,
+    "name": "Milpool",
+    "image": "/images/Milhouse_Van_Houten.png"
+  },
+  {
+    "id": 10,
+    "name": "Smithers",
+    "image": "/images/Waylon_Smithers.png"
+  },
+  {
+    "id": 11,
+    "name": "Ralph",
+    "image": "/images/Ralph_Wiggum.png"
+  },
+  {
+    "id": 12,
+    "name": "Chief Wiggum",
+    "image": "/images/Chief_Wiggum.png"
+  },
+  {
+    "id": 13,
+    "name": "Tamzarian",
+    "image": "/images/Seymour_Skinner.png"
+  },
+  {
+    "id": 14,
+    "name": "Patty",
+    "image": "/images/Patty_Bouvier.png"
+  },
+  {
+    "id": 15,
+    "name": "Selma",
+    "image": "/images/Selma_Bouvier.png"
+  },
+  {
+    "id": 16,
+    "name": "Dr. Hibbert",
+    "image": "/images/Doctor_Hibbert.png"
+  }
+]

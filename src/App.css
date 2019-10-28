@@ -20,3 +20,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  background-image: url("https://images.wikia.nocookie.net/__cb46/simpsons/images/5/50/Wiki-background");
+  background-color: aliceblue;
+  background-position: center;
+  background-size: cover;
+}
+#titleText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
