@@ -5,11 +5,13 @@ const Card = props => (
   <div
     className="card"
     clicked="false"
-    onClick={() => {
-      console.log(props.simpsons);
-      Card.clicked = "true";
-      props.simpShuffle(props.simpsons);
-    }}
+    onClick={() => props.onClick(props.id)}
+    // onClick={() => {
+    //   // console.log(props.simpsons);
+    //   // props.clicked
+    //   // Card.clicked = "true";
+    //   // props.simpShuffle(props.simpsons);
+    // }}
   >
     <img alt={props.name} src={props.image} className="cardPic" />
   </div>

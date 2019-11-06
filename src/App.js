@@ -5,6 +5,7 @@ import simpsons from "./simpsons.json";
 
 class App extends Component {
   state = {
+    clicked: [],
     simpsons,
     score: 0,
     hiscore: 0
@@ -24,8 +25,8 @@ class App extends Component {
     }
   };
 
-  peekAboo = () => {
-    console.log(this.state.simpsons);
+  peekAboo = id => {
+    console.log(id);
   };
 
   // powerMove = () => {
@@ -43,7 +44,8 @@ class App extends Component {
           // border="0"
         />
         {this.simpShuffle(simpsons)}
-        {console.log(simpsons)}
+        {console.log("This is a regular console log" + simpsons)}
+        {/* {this.peekAboo()} */}
         {this.state.simpsons.map(card => (
           <Card
             id={card.id}
@@ -51,8 +53,8 @@ class App extends Component {
             name={card.name}
             image={card.image}
             onClick={() => {
-              Card.clicked = 1;
-              this.simpShuffle();
+              //   Card.clicked = 1;
+              //   this.simpShuffle();
               this.peekAboo();
             }}
           />
