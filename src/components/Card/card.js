@@ -8,7 +8,7 @@ const Card = props => (
     onClick={() => {
       console.log(props.simpsons);
       Card.clicked = "true";
-      // props.simpShuffle(props.simpsons);
+      props.simpShuffle(props.simpsons);
     }}
   >
     <img alt={props.name} src={props.image} className="cardPic" />
