@@ -12,9 +12,6 @@ class App extends Component {
   };
 
   // Why length -1?
-  // Why isn't props.simpShuffle seen as a function?
-  // Look deep into the working example and fire up the old google, you got this
-  // Once this is finished there's just 1 react app and the final project left!
 
   simpShuffle = array => {
     for (var i = array.length - 1; i > 0; i--) {
@@ -22,6 +19,16 @@ class App extends Component {
       var temp = array[i];
       array[i] = array[j];
       array[j] = temp;
+    }
+  };
+
+  clickCheck = (clicked, id, score, highscore) => {
+    for (var i = 0; clicked.length > i; i++) {
+      if (clicked[i].value === id) {
+        console.log("game over!");
+      } else {
+        console.log("Score + 1");
+      }
     }
   };
 
@@ -53,9 +60,10 @@ class App extends Component {
             name={card.name}
             image={card.image}
             onClick={() => {
-              //   Card.clicked = 1;
-              //   this.simpShuffle();
-              this.peekAboo();
+              this.simpShuffle(simpsons);
+              this.peekAboo(simpsons);
+              this.state.clicked.push("test");
+              console.log(this.state.clicked);
             }}
           />
         ))}
