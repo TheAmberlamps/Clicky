@@ -20,14 +20,20 @@ class App extends Component {
       array[i] = array[j];
       array[j] = temp;
     }
+    console.log("Shuffled array: " + JSON.stringify(array));
   };
 
-  clickCheck = (clicked, id, score, highscore) => {
-    for (var i = 0; clicked.length > i; i++) {
-      if (clicked[i].value === id) {
+  // work in progress
+
+  clickCheck = (id, score, highscore) => {
+    for (var i = 0; this.state.clicked.length > i; i++) {
+      if (this.state.clicked[i] === id) {
         console.log("game over!");
       } else {
-        console.log("Score + 1");
+        this.setState({ score: this.state.score + 1 });
+        console.log("Current Score: " + this.state.score);
+        // lol until i actually have something other than test values in clicked this is not going to move forwards as a function
+        // console.log(this.state.clicked[i]);
       }
     }
   };
@@ -51,8 +57,6 @@ class App extends Component {
           // border="0"
         />
         {this.simpShuffle(simpsons)}
-        {console.log("This is a regular console log" + simpsons)}
-        {/* {this.peekAboo()} */}
         {this.state.simpsons.map(card => (
           <Card
             id={card.id}
@@ -63,7 +67,8 @@ class App extends Component {
               this.simpShuffle(simpsons);
               this.peekAboo(simpsons);
               this.state.clicked.push("test");
-              console.log(this.state.clicked);
+              this.clickCheck();
+              console.log("Current clicked array: " + this.state.clicked);
             }}
           />
         ))}

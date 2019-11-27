@@ -5,7 +5,7 @@ const Card = props => (
   <div
     className="card"
     clicked="false"
-    onClick={() => props.onClick(props.id)}
+    onClick={() => props.onClick()}
     // onClick={() => {
     //   // console.log(props.simpsons);
     //   // props.clicked
